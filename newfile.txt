@@ -1,6 +1,4 @@
-newfile.txt
-
-Your answer for What is the difference between `add`, `commit`, and `push`?
+Answer for What is the difference between `add`, `commit`, and `push`?
 
 - definition is different
 
