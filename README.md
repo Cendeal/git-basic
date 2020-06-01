@@ -37,9 +37,9 @@ Other useful commands to see what is going on the git repository:
 
      `add` use to add file contents to the index, in fact. if you execute this command it will change your local .git/index file and create a new directory in .git/object to record what have changed.
 
-     `commit` use to record changes to the repository
+     `commit` use to record changes to the repository. if you execute this command it will change your local .git/index too,it will create a file(if not exist) name "COMMIT_EDITMSG" to record your commit message, it will create directory and file in .git/object,and it will  change ref of head file.
 
-     `push` use to update remote refs along with associated objects as local
+     `push` use to update remote refs along with associated objects as local, if you execute this command it will update files about remote record  in local like .git/log/ref/remotes/origin/master, .git/refs/remotes/origin/master
 
    - using order is different.
 
