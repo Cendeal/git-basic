@@ -1,1 +1,21 @@
 newfile.txt
+
+Your answer for What is the difference between `add`, `commit`, and `push`?
+
+- definition is different
+
+  `add` use to add file contents to the index, in fact. if you execute this command it will change your local .git/index file and create a new directory in .git/object to record what have changed.
+
+  `commit` use to record changes to the repository. if you execute this command it will change your local .git/index too,it will create a file(if not exist) name "COMMIT_EDITMSG" to record your commit message, it will create directory and file in .git/object,and it will  change ref of head file.
+
+  `push` use to update remote refs along with associated objects as local, if you execute this command it will update files about remote record  in local like .git/log/ref/remotes/origin/master, .git/refs/remotes/origin/master(this file just records hash string for current master)
+
+- using order is different.
+
+  For example, if you have changed something in your local, you need to `add` first,
+
+  and then `commit` your changes, finally `push` your commit.
+
+- scope is different.
+
+  `add` and `commit` just in local. If you do not push, it will not change anything into remote
